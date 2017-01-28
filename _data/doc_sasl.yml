@@ -8,7 +8,7 @@ SASL:
       link: "https://tools.ietf.org/html/rfc4422#appendix-A"
     plain:
       name: PLAIN
-      description: PLAIN SASL mechanism
+      description: Base64-encoded password
       required: true
       link: https://tools.ietf.org/search/rfc4616
     scram-sha-256:
@@ -16,6 +16,10 @@ SASL:
       description: SASL SCRAM-SHA-256 mechanism
       required: true
       link: https://tools.ietf.org/html/rfc7677
+    ecdsa-nist256p-challenge:
+      name: ECDSA-NIST256P-CHALLENGE
+      description: Token signing with an ECDSA key
+      required: false
     # dh-aes:
     #   name: DH-AES
     #   description: DH-AES SASL mechanism (deprecated)
