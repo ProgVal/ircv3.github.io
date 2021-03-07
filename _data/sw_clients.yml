@@ -393,6 +393,7 @@
           sasl-3.2:
           server-time:
           userhost-in-names:
+          +typing:
         SASL:
           - plain
     - name: The Lounge
